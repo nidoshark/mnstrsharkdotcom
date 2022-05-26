@@ -31,6 +31,7 @@
   color: white;
   font-size: 9px;
   font-family: TDHY;
+  text-decoration: none;
 }
 .header-container3 {
   flex: 0 0 auto;
@@ -60,6 +61,7 @@
   font-size: 9px;
   text-align: center;
   font-family: TDHY;
+  text-decoration: none;
 }
 .header-root-class-name {
   top: 0px;
@@ -76,5 +78,10 @@
   top: 0px;
   left: 0px;
   margin: auto;
+  position: absolute;
+}
+.header-root-class-name3 {
+  top: 0px;
+  left: 0px;
   position: absolute;
 }

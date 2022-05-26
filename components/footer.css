@@ -68,6 +68,11 @@
   bottom: 0px;
   position: absolute;
 }
+.footer-root-class-name3 {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+}
 @media(max-width: 991px) {
   .footer-text {
     text-align: left;
