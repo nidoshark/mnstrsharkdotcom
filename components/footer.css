@@ -1,0 +1,98 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+}
+.footer-footer {
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: #000000;
+}
+.footer-text {
+  color: #ffffff;
+  font-size: 9px;
+  font-family: TDHY;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-link {
+  color: #6bd6ff;
+  font-size: 9px;
+  font-family: TDHY;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
+}
+.footer-link1 {
+  color: #f14861;
+  font-size: 9px;
+  font-family: TDHY;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
+}
+.footer-root-class-name {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+.footer-root-class-name1 {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+.footer-root-class-name2 {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+@media(max-width: 991px) {
+  .footer-text {
+    text-align: left;
+    line-height: 2;
+  }
+}
+@media(max-width: 767px) {
+  .footer-footer {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .footer-text {
+    text-align: center;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .footer-footer {
+    padding: var(--dl-space-space-twounits);
+    flex-direction: column;
+  }
+  .footer-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
