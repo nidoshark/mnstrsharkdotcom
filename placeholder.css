@@ -285,22 +285,12 @@
   font-family: TDHY;
   line-height: 2;
 }
-.placeholder-container3 {
-  flex: 0 0 auto;
-  right: 97px;
-  bottom: 145px;
-  display: flex;
-  z-index: -100;
-  position: absolute;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.placeholder-normal-text {
+  margin-top: var(--dl-space-space-twounits);
 }
 .placeholder-text10 {
-  left: 0px;
   color: #000000;
-  bottom: 0px;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   font-family: TDHY;
   line-height: 2;
