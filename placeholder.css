@@ -141,16 +141,12 @@
   margin-left: var(--dl-space-space-halfunit);
   margin-right: var(--dl-space-space-halfunit);
 }
-.footer-root-class-name {
-  left: 0px;
-  bottom: 0px;
-  position: absolute;
-}
 .footer-root-class-name1 {
   flex: 1;
   left: 0px;
   bottom: 0px;
   position: 0px;
+  align-self: stretch;
 }
 .footer-root-class-name2 {
   left: 0px;
@@ -163,6 +159,11 @@
   position: absolute;
 }
 .footer-root-class-name4 {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+.footer-root-class-name {
   left: 0px;
   bottom: 0px;
   position: absolute;
@@ -205,11 +206,6 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
-  }
-  .footer-root-class-name {
-    left: 0px;
-    bottom: 300px;
-    position: static;
   }
 }
 
