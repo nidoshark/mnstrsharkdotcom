@@ -5,6 +5,7 @@
   position: relative;
   align-items: flex-start;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .footer-container1 {
   flex: 0 0 auto;
@@ -59,9 +60,10 @@
   position: absolute;
 }
 .footer-root-class-name1 {
+  flex: 1;
   left: 0px;
   bottom: 0px;
-  position: absolute;
+  position: 0px;
 }
 .footer-root-class-name2 {
   left: 0px;
@@ -96,13 +98,30 @@
   }
 }
 @media(max-width: 479px) {
+  .footer-container {
+    justify-content: flex-end;
+  }
+  .footer-container1 {
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    position: absolute;
+  }
   .footer-footer {
-    padding: var(--dl-space-space-twounits);
+    top: 10px;
+    left: 0px;
+    padding: var(--dl-space-space-halfunit);
+    position: absolute;
     flex-direction: column;
   }
   .footer-text {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .footer-root-class-name {
+    left: 0px;
+    bottom: 300px;
+    position: static;
   }
 }

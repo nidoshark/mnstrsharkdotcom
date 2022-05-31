@@ -1,11 +1,9 @@
 .header-container {
+  top: 0;
   width: 100%;
-  display: flex;
   z-index: 1000;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
+  overflow: hidden;
+  position: fixed;
 }
 .header-container1 {
   width: 100%;
@@ -68,12 +66,7 @@
   left: 0px;
   position: absolute;
 }
-.header-root-class-name1 {
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  position: absolute;
-}
+
 .header-root-class-name2 {
   top: 0px;
   left: 0px;
