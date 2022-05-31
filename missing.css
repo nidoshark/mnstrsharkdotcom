@@ -320,6 +320,15 @@
   background-repeat: repeat-x;
   background-position: top;
 }
+.missing-image1 {
+  right: 54px;
+  width: 59px;
+  bottom: 80px;
+  height: 59px;
+  position: absolute;
+  object-fit: cover;
+  text-decoration: none;
+}
 @media(max-width: 991px) {
   .missing-text1 {
     text-align: left;
@@ -363,6 +372,10 @@
     left: 0px;
     display: none;
     position: absolute;
+  }
+  .missing-image1 {
+    width: 87px;
+    height: 87px;
   }
 }
 @media(max-width: 479px) {
