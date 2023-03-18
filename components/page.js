@@ -1,6 +1,9 @@
+
+var foyer_sound = new Audio('audio/foyer.wav');
+
 // cog wheel variables
 function updateBodyWidth() {
-     document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
+    document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
 }
 
 window.addEventListener('scroll', () => {
@@ -8,13 +11,14 @@ window.addEventListener('scroll', () => {
 }, false);
 
 window.addEventListener('resize', () => { updateBodyWidth(); }, false);
-window.addEventListener('load', () => { updateBodyWidth(); }, false);
+window.addEventListener('load', () => {
+    updateBodyWidth();
+}, false);
 
 
 // sound stuff
 function playFoyer() {
-    var audio = new Audio('audio/foyer.wav');
-    audio.play();
+    foyer_sound.play();
 }
 
 function playNav() {
@@ -25,14 +29,14 @@ function playNav() {
         audio.addEventListener('ended', function () {
             window.location.href = href;
         })
-        
+
         audio.addEventListener('error', function () {
             window.location.href = href;
         })
-        
+
         event.preventDefault();
         audio.play();
-    } else {   
+    } else {
         // just skip it
         window.location.href = href;
     }
