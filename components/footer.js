@@ -11,6 +11,8 @@ class Footer extends HTMLElement {
             background: black;
             background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
             height: 200px;
+            margin-top: 70px;
+            padding: 10px;
         }
 
         .footer {
@@ -18,7 +20,7 @@ class Footer extends HTMLElement {
             width: 400px;
             margin: auto;
             text-align: center;
-            top: 50px;
+            top: 25%;
         }
 
         @media (max-width:600px) {

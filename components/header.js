@@ -44,6 +44,8 @@ class Header extends HTMLElement {
             .navigation {
                 height: 100px;
                 text-align: center;
+                position: absolute;
+                width: 100%;
             }
 
             .navigation a {
@@ -71,7 +73,7 @@ class Header extends HTMLElement {
                 background-image: url(assets/panel_logo.png);
                 margin-left: calc(calc(50% - var(--panel-width) * 0.5));
                 left: -175px;
-                top: 176px;
+                top: 146px;
                 width: 195px;
                 height: 229px;
                 position: absolute;
@@ -110,6 +112,7 @@ class Header extends HTMLElement {
                 top: 24px;
                 z-index: 1;
                 margin: auto;
+                top: 94px;
             }
 
             .marquee-border {
@@ -159,7 +162,7 @@ class Header extends HTMLElement {
         </style>
         <header>
             <div class="navigation">
-                <a href="index" onclick="playNav()">HOME
+                <a href="./" onclick="playNav()">HOME
                 </a><a href="blog" onclick="playNav()">BLOG
                 </a><a href="404" onclick="playNav()">???
                 </a><a href="404" onclick="playNav()">???</a>
