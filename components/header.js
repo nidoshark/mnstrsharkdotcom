@@ -150,9 +150,9 @@ class Header extends HTMLElement {
                     padding-bottom: 10px;
                     border-color: #A0A8AF;
                     box-sizing: border-box;
-                    border-width: 10px;
+                    border-width: 8px;
                     border-style: solid;
-                    border-radius: 8vw;
+                    border-radius: 7vw;
                     margin-top: -50px;
                 }
             }

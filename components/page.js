@@ -19,9 +19,18 @@ function playNav() {
     var audio = new Audio('audio/getfruit.ogg');
     var href = event.target.href;
 
-    audio.addEventListener('ended', function () {
+    if (audio.canPlayType('audio/ogg') != "") {
+        audio.addEventListener('ended', function () {
+            window.location.href = href;
+        })
+
+        audio.addEventListener('error', function () {
+            window.location.href = href;
+        })
+        
+        event.preventDefault();
+        audio.play();
+    } else {
         window.location.href = href;
-    })
-    event.preventDefault();
-    audio.play();
+    }
 }
