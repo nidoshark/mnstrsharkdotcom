@@ -1,135 +1,41 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en">
-  <head>
-    <title>MNSTR Shark</title>
-    <meta property="og:title" content="404 - MNSTR Shark" />
-    <meta property="og:title" content="Home - MNSTR Shark" />
-    <meta property="og:title" content="??? - MNSTR Shark" />
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset);
+        }, false);
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: TDHY;
-        font-size: 16px;
-      }
-      /*
-        Boy I sure am glad nobody's here to see this.
-        Uh. Who are you?
-      */
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+        window.addEventListener('resize', () => {
+            document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
+        }, false);
 
-      }
-    </style>
-    <link
-      rel="shortcut icon"
-      href="/playground_assets/favicon.ico"
-      type="icon/png"
-      sizes="32x32"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      data-tag="font"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./missing.css" rel="stylesheet" />
+        window.addEventListener('load', () => {
+            document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
+        }, false);
+    </script>
+    <title>404 YOU GOT LOST!!!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
+</head>
 
-      <div class="missing-container">
-        <header class="header-container header-root-class-name">
-          <header class="header-container1">
-            <div class="header-container2">
-              <a href="https://mnstrshark.com" class="header-link">
-                <span>Home</span>
-              </a>
-            </div>
-            <div class="header-container3">
-              <img
-                alt="image"
-                src="public/playground_assets/mnstrshark-logo-1500w.png"
-                class="header-image"
-              />
-            </div>
-            <div class="header-container4">
-              <a href="https://mnstrshark.com/placeholder" class="header-link1">
-                <span>???</span>
-              </a>
-            </div>
-          </header>
-        </header>
-        <div class="missing-container1">
-          <div class="missing-brick-top"></div>
-          <div class="missing-container2">
-            <div class="missing-container3">
-              <div class="missing-container4">
-                <div class="missing-text">
-                  <span class="missing-text1">
-                    <span>404</span>
-                    <span></span>
-                  </span>
-                  <span class="missing-subtext">
-                    <span>What should even be here?</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <img
-              alt="image"
-              src="public/playground_assets/thicket404-1500h.png"
-              class="missing-image"
-            />
-          </div>
-          <div class="missing-brick-bottom"></div>
+<body>
+    <header-component></header-component>
+    <div class="container">
+        <div class=content>
+            <br>
+            <p style="font-size: 100px">404</p>
+            <p style="margin-top: -30px">No page content found</p><br>
+            <img style="width: 240px;" src="assets/delver_shrug.png"><br><br>
+            <i>Was something meant to be here?</i>
         </div>
-        <a href="https://www.mnstrshark.com/super-secret-rogbat-page">
-          <img
-            src="public/playground_assets/rogbat-200h.gif"
-            alt="image"
-            class="missing-image1"
-          />
-        </a>
-        <footer class="footer-container footer-root-class-name">
-          <div class="footer-container1">
-            <footer class="footer-footer">
-              <span class="footer-text"><span>© 2022 MNSTR Shark</span></span>
-              <div class="footer-socials">
-                <a
-                  href="https://twitter.com/mnstrshark"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link"
-                >
-                  <span>Twitter</span>
-                </a>
-                <a
-                  href="mailto:thedungeonhatesyou@gmail.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="footer-link1"
-                >
-                  <span>Email</span>
-                </a>
-              </div>
-            </footer>
-          </div>
-        </footer>
-      </div>
     </div>
-  </body>
+    <footer-component></footer-component>
+    <!--    <div style="background: rgba(0,100,156,0.25); position: absolute; height: 500px !important; margin: 0; width: 100%; z-index: -1;"></div>-->
+</body>
+
 </html>

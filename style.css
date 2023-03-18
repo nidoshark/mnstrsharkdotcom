@@ -1,103 +1,103 @@
-:root {
-  --dl-color-gray-500: #595959;
-  --dl-color-gray-700: #999999;
-  --dl-color-gray-900: #D9D9D9;
-  --dl-size-size-large: 144px;
-  --dl-size-size-small: 48px;
-  --dl-color-danger-300: #A22020;
-  --dl-color-danger-500: #BF2626;
-  --dl-color-danger-700: #E14747;
-  --dl-color-gray-black: #000000;
-  --dl-color-gray-white: #FFFFFF;
-  --dl-size-size-medium: 96px;
-  --dl-size-size-xlarge: 192px;
-  --dl-size-size-xsmall: 16px;
-  --dl-space-space-unit: 16px;
-  --dl-color-primary-100: #003EB3;
-  --dl-color-primary-300: #0074F0;
-  --dl-color-primary-500: #14A9FF;
-  --dl-color-primary-700: #85DCFF;
-  --dl-color-success-300: #199033;
-  --dl-color-success-500: #32A94C;
-  --dl-color-success-700: #4CC366;
-  --dl-size-size-xxlarge: 288px;
-  --dl-size-size-maxwidth: 1400px;
-  --dl-radius-radius-round: 50%;
-  --dl-space-space-halfunit: 8px;
-  --dl-space-space-sixunits: 96px;
-  --dl-space-space-twounits: 32px;
-  --dl-radius-radius-radius2: 2px;
-  --dl-radius-radius-radius4: 4px;
-  --dl-radius-radius-radius8: 8px;
-  --dl-space-space-fiveunits: 80px;
-  --dl-space-space-fourunits: 64px;
-  --dl-space-space-threeunits: 48px;
-  --dl-space-space-oneandhalfunits: 24px;
+* {
+    margin: 0;
 }
-.button {
-  color: var(--dl-color-gray-black);
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+
+img {
+    user-select: none;
 }
-.input {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+
+a {
+    user-select: none;
 }
-.textarea {
-  color: var(--dl-color-gray-black);
-  cursor: auto;
-  padding: 0.5rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
-}
-.list {
-  width: 100%;
-  margin: 1em 0px 1em 0px;
-  display: block;
-  padding: 0px 0px 0px 1.5rem;
-  list-style-type: none;
-  list-style-position: outside;
-}
-.list-item {
-  display: list-item;
-}
-.teleport-show {
-  display: flex !important;
-}
-.heading {
-  font-size: 32px;
-  font-family: Inter;
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
-.content {
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
+
 @font-face {
     font-family: 'tdhy';
-    src: url('tdhy.eot');
-    src: url('tdhy.eot?#iefix') format('embedded-opentype'),
-        url('tdhy.woff') format('woff'),
-        url('tdhy.svg#tdhy') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    src: url('assets/tdhy.ttf');
 }
+
+body {
+    font-family: 'tdhy', sans-serif;
+    color: white;
+    background-image: url('assets/bg.png');
+    background-repeat: repeat;
+}
+
+.bg {
+    position: absolute
+}
+
+.image-container {
+    color: white;
+    position: relative;
+    left: 40px;
+}
+
+.showcase {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 20px auto;
+    display: block;
+    border-style: inset;
+    border-width: 6px;
+    box-sizing: border-box;
+    border-color: #888888;
+}
+
+.content {
+    width: 100%; 
+    max-width: 600px; 
+    margin-bottom: 30px; 
+    margin-left: auto; 
+    margin-right: auto;  
+    display: block;
+    text-align: center;
+}
+
+.container {
+    border-image: url('assets/panel_ns.png');
+    border-image-slice: 25 fill;
+    border-image-width: 25px;
+    position: relative;
+    padding: 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+    min-height: 300px;
+    margin-left: calc(50% - var(--panel-width) * 0.5);
+    width: var(--panel-width);
+    height: 100%;
+}
+
+.container img {
+    width: 100%;
+}
+
+.blog-post {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #2C2D38;
+    padding: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-post td {
+    padding: 15px;
+}
+
+a:link {
+    color: #84FFC3;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #84FFC3;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: white;
+} 

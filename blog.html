@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset);
+        }, false);
+
+        window.addEventListener('resize', () => {
+            document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
+        }, false);
+
+        window.addEventListener('load', () => {
+            document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
+        }, false);
+
+    </script>
+    <title>MNSTR Shark - Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <div class="container">
+        <div class="blog-post" style="padding: 5px">
+            <table>
+                <tr>
+                    <td><img src="assets/delver_note.png" style="width: 100px;"></td>
+                    <td>DISCLAIMER: The content of this blog was not written by Delver. Do not listen to his plagiaristic claims.</td>  
+                </tr>
+            </table>
+        </div>
+        <div class="blog-post">
+            <p style="font-size:20px">CONCEPTION OF A NEW POSTING PLACE</p>
+            March 18th 2023
+            <img src="blog/1.png" class="showcase">
+            Welcome to the updated MNSTR Shark site! I had been silently working on this for the most part of 2023 to date (a lot of time spent was occupied by Having A Snooze) so I hope it at least turned out appealing to the few people who will check it out.
+            <br><br>
+            More importantly, the reason to have a blog at all is that it's nice to have a non-Twittery place to drop updates, especially those less groundbreaking or directly related to the game project.
+            <br><br>
+            On which note, just when progress had dwindled due to the learning curve of switching game engines a year into development, we received an anonymous package at MNSTR HQ containing nothing but an anvil and the saviour we needed in the form of a blue critter named <a href="https://twitter.com/doodlingmicky">Micky</a>.
+            <br><br>
+            So here's for the future of the dungeon, and the semi-realistic goal of releasing a demo this year for everybody to enjoy.
+        </div>
+    </div>
+    <footer-component></footer-component>
+    <!--    <div style="background: rgba(0,100,156,0.25); position: absolute; height: 500px !important; margin: 0; width: 100%; z-index: -1;"></div>-->
+</body>
+
+</html>
