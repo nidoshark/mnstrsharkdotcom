@@ -42,7 +42,6 @@ class Header extends HTMLElement {
             }
 
             .navigation {
-                width: auto;
                 height: 100px;
                 text-align: center;
             }
@@ -50,7 +49,7 @@ class Header extends HTMLElement {
             .navigation a {
                 padding-top: 10px;
                 background-image: url('assets/nav_default.png');
-                background-size: contain;
+                background-size: cover;
                 display: inline-block;
                 width: 112px;
                 height: 90px;
@@ -126,6 +125,35 @@ class Header extends HTMLElement {
 
                 100% {
                     transform: translate(-100%, 0);
+                }
+            }
+
+            @media (max-width:600px) {
+                .marquee-container {
+                    display: none;
+                }
+
+                .gear {
+                    display: none;
+                }
+
+                .navigation a:hover, navigation a:active {
+                    background-image: none;
+                }
+                
+                .navigation a {
+                    width: 25%;
+                    height: 120px;
+                    background-image: none;
+                    background-color: #31313F;
+                    padding-top: 55px;
+                    padding-bottom: 10px;
+                    border-color: #A0A8AF;
+                    box-sizing: border-box;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-radius: 8vw;
+                    margin-top: -50px;
                 }
             }
         </style>

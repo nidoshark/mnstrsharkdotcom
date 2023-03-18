@@ -18,7 +18,18 @@ class Footer extends HTMLElement {
             width: 400px;
             margin: auto;
             text-align: center;
-            top: 70px;
+            top: 50px;
+        }
+
+        @media (max-width:600px) {
+            .footer_container {
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            
+            .footer {
+                width: 100%;
+            }
         }
     </style>
       <footer>
