@@ -128,7 +128,7 @@ class Header extends HTMLElement {
         <header>
             <div class="navigation">
                 <a href="index.html">HOME
-                </a><a href="blog.html">BLOG</a><a href="404.html">???</a><a href="404.html">???</a>
+                </a><a href="blog">BLOG</a><a href="404">???</a><a href="404">???</a>
             </div>
         </header>
         <img class="gear gear_left">
