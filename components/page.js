@@ -16,10 +16,10 @@ function playFoyer() {
 }
 
 function playNav() {
-    var audio = new Audio('audio/getfruit.ogg');
+    var audio = new Audio('audio/getfruit.wav');
     var href = event.target.href;
 
-    if (audio.canPlayType('audio/ogg') != "") {
+    if (audio.canPlayType('audio/wav') != "") {
         audio.addEventListener('ended', function () {
             window.location.href = href;
         })
