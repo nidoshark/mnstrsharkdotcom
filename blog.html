@@ -3,25 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script>
-        window.addEventListener('scroll', () => {
-            document.body.style.setProperty('--scroll', window.pageYOffset);
-        }, false);
-
-        window.addEventListener('resize', () => {
-            document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
-        }, false);
-
-        window.addEventListener('load', () => {
-            document.body.style.setProperty('--panel-width', Math.min(Math.max(window.innerWidth * 0.8, 640), 950) + 'px');
-        }, false);
-
-    </script>
     <title>MNSTR Shark - Blog</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/page.js" type="text/javascript" defer></script>
 </head>
 
 <body>

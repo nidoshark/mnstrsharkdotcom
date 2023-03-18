@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
         <style>
             .gear {
                 content: url('assets/gear.png');
@@ -62,6 +62,10 @@ class Header extends HTMLElement {
 
             .navigation a:hover {
                 background-image: url('assets/nav_hover.png');
+            }
+
+            .navigation a:active {
+                background-image: url('assets/nav_selected.png');
             }
 
             .logo-name {
@@ -127,8 +131,10 @@ class Header extends HTMLElement {
         </style>
         <header>
             <div class="navigation">
-                <a href="index.html">HOME
-                </a><a href="blog">BLOG</a><a href="404">???</a><a href="404">???</a>
+                <a href="index" onclick="playNav()">HOME
+                </a><a href="blog" onclick="playNav()">BLOG
+                </a><a href="404" onclick="playNav()">???
+                </a><a href="404" onclick="playNav()">???</a>
             </div>
         </header>
         <img class="gear gear_left">
@@ -145,7 +151,7 @@ class Header extends HTMLElement {
             </div>
         </div>
     `;
-  }
+    }
 }
 
 customElements.define('header-component', Header);
