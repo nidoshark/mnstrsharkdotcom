@@ -13,6 +13,7 @@ class Footer extends HTMLElement {
             height: 200px;
             margin-top: 70px;
             padding: 10px;
+            box-sizing: border-box;
         }
 
         .footer {
@@ -22,7 +23,7 @@ class Footer extends HTMLElement {
             text-align: center;
             top: 25%;
         }
-
+        
         @media (max-width:600px) {
             .footer_container {
                 padding: 20px;

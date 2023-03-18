@@ -5,6 +5,7 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
+        <audio id="blip" preload="auto"><source src="audio/getfruit.wav" type="audio/wav"></audio> 
         <style>
             .gear {
                 content: url('assets/gear.png');
@@ -73,7 +74,7 @@ class Header extends HTMLElement {
                 background-image: url(assets/panel_logo.png);
                 margin-left: calc(calc(50% - var(--panel-width) * 0.5));
                 left: -175px;
-                top: 146px;
+                top: 166px;
                 width: 195px;
                 height: 229px;
                 position: absolute;
@@ -109,10 +110,9 @@ class Header extends HTMLElement {
                 padding: 24px;
                 padding-top: 24px;
                 padding-left: 24px;
-                top: 24px;
                 z-index: 1;
                 margin: auto;
-                top: 94px;
+                top: 114px;
             }
 
             .marquee-border {
@@ -139,24 +139,25 @@ class Header extends HTMLElement {
                 .gear {
                     display: none;
                 }
-
-                .navigation a:hover, navigation a:active {
-                    background-image: none;
-                }
                 
                 .navigation a {
                     width: 25%;
                     height: 120px;
                     background-image: none;
                     background-color: #31313F;
-                    padding-top: 55px;
+                    padding-top: 70px;
                     padding-bottom: 10px;
                     border-color: #A0A8AF;
                     box-sizing: border-box;
-                    border-width: 8px;
+                    border-width: 5px;
                     border-style: solid;
-                    border-radius: 7vw;
+                    border-radius: 6vw;
                     margin-top: -50px;
+                }
+
+                .navigation a:hover, .navigation a:active {
+                    background-image: none;
+                    border-color: #84FFC3;
                 }
             }
         </style>

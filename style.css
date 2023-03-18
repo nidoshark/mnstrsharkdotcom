@@ -69,7 +69,7 @@ body {
     margin-left: calc(50% - var(--panel-width) * 0.5);
     width: var(--panel-width);
     height: 100%;
-    top: 70px;
+    top: 90px;
 }
 
 .container img {
@@ -108,9 +108,17 @@ a:active {
     padding: 50px;
 }
 
+.groovin {
+    cursor: pointer; 
+    float: right; 
+    margin-left: 20px; 
+    width: 220px; 
+    height: auto;
+}
+
 @media (max-width:600px) {    
     .container {
-        font-size: 18px;
+        font-size: 14px;
         width: 100%;
         margin-left: 0;
         background: #22222E;
@@ -118,8 +126,16 @@ a:active {
         border-image-slice: 25 fill;
         border-image-width: 0px;
         padding: 0;
+        padding-top: 15px;
         border-top: 25px solid #84FFC3;
         border-bottom: 25px solid #84FFC3;
+    }
+    
+    .groovin, .container img {
+        float: none;
+        margin-bottom: 10px 0;
+        border-width: 0px;
+        margin-left: 0;
     }
     
     .mobile-padding {
@@ -130,10 +146,20 @@ a:active {
         font-size: 30px;
     }
     
+    h2 {
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+    
     .blog-post {
         width: 100%;
         margin-left: 0px;
         padding: 20px;
-        font-size: 18px;
+        font-size: 14px;
+    }
+    
+    iframe {
+        height: 220px;
     }
 }
