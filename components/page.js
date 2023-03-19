@@ -14,6 +14,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('resize', () => { updateBodyWidth(); }, false);
 window.addEventListener('load', () => {
     updateBodyWidth();
+    rollRogbat();
 }, false);
 
 
@@ -34,8 +35,14 @@ function playFoyer(ele) {
     window.setTimeout(foyerEnd, 600, ele);
 }
 
-
-
+function rollRogbat() {    
+    var val = Math.floor(Math.random() * 4);
+    
+    if (val == 0) {
+        var ele = document.getElementById('rogbat')
+        ele.style.display = 'block';
+    }
+}
 
 function playNav() {
     var audio = document.getElementById('blip')

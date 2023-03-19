@@ -116,6 +116,15 @@ a:active {
     height: auto;
 }
 
+.rogbat {
+    width: 80px;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
 @media (max-width:600px) {    
     .container {
         font-size: 14px;
@@ -133,7 +142,7 @@ a:active {
     
     .groovin, .container img {
         float: none;
-        margin-bottom: 10px 0;
+        margin: 10px 0;
         border-width: 0px;
 /*        margin-left: 0;*/
     }
@@ -169,5 +178,9 @@ a:active {
     
     iframe {
         height: 250px;
+    }
+    
+    .rogbat {
+        bottom: -10px;
     }
 }
