@@ -90,6 +90,8 @@ class Header extends HTMLElement {
                 width: 100%;
                 text-align: center;
                 font-size: 19px;
+                bottom: 18px;
+                position:absolute;
             }
 
             .marquee {
@@ -172,7 +174,7 @@ class Header extends HTMLElement {
         <img class="gear gear_left">
         <img class="gear gear_right">
         <div class="logo-name">
-            <img src="assets/mnstrshark.png">
+            <img src="assets/mnstrshark.png" style="cursor:pointer" onclick="mnstrClick(this)">
             <div class="name">
                 MNSTR Shark
             </div>

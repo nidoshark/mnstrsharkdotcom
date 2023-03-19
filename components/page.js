@@ -1,5 +1,6 @@
 
 var foyer_sound = new Audio('audio/foyer.wav');
+var explode_sound = new Audio('audio/explode.wav');
 
 // cog wheel variables
 function updateBodyWidth() {
@@ -40,4 +41,14 @@ function playNav() {
         // just skip it
         window.location.href = href;
     }
+}
+
+function mnstrClick(ele) {
+    explode_sound.play();
+    ele.src = 'assets/explode.gif';
+    window.setTimeout(mnstrEnd, 700, ele);
+}
+
+function mnstrEnd(ele) {
+    ele.style.display = 'none';
 }
