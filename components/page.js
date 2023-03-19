@@ -1,5 +1,5 @@
 
-var foyer_sound = new Audio('audio/foyer.wav');
+var foyer_sound = new Audio('audio/philly_hit.wav');
 var explode_sound = new Audio('audio/explode.wav');
 
 // cog wheel variables
@@ -18,9 +18,24 @@ window.addEventListener('load', () => {
 
 
 // sound stuff
-function playFoyer() {
-    foyer_sound.play();
+function foyerEnd(ele) {
+    ele.src = 'images/delver_dance.gif';
+    ele.onclick = () => {
+     playFoyer(ele);   
+    };
+    ele.style.cursor = 'pointer'
 }
+
+function playFoyer(ele) {    
+    foyer_sound.play();
+    ele.onclick = '';
+    ele.style.cursor = '';
+    ele.src = 'images/thumb.png';
+    window.setTimeout(foyerEnd, 600, ele);
+}
+
+
+
 
 function playNav() {
     var audio = document.getElementById('blip')
