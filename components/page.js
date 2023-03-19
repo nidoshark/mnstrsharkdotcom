@@ -45,6 +45,8 @@ function playNav() {
 
 function mnstrClick(ele) {
     explode_sound.play();
+    ele.onclick = ''
+    ele.style.cursor = ''
     ele.src = 'assets/explode.gif';
     window.setTimeout(mnstrEnd, 700, ele);
 }

@@ -135,7 +135,15 @@ a:active {
         float: none;
         margin-bottom: 10px 0;
         border-width: 0px;
-        margin-left: 0;
+/*        margin-left: 0;*/
+    }
+    
+    .groovin {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 0;
     }
     
     .mobile-padding {
@@ -160,6 +168,6 @@ a:active {
     }
     
     iframe {
-        height: 220px;
+        height: 250px;
     }
 }
