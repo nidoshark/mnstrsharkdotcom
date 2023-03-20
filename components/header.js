@@ -82,8 +82,13 @@ class Header extends HTMLElement {
             }
 
             .logo-name img {
-                width: 100px;
-                padding: 38px;
+                width: 45%;
+                display: flex;
+                box-sizing: border-box;
+                margin: auto;
+                margin-right: 64px;
+                margin-top: 35px;
+                display: block;
             }
 
             .name {
