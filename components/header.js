@@ -2,8 +2,18 @@ class Header extends HTMLElement {
     constructor() {
         super();
     }
-
+    
     connectedCallback() {
+        var motd_list = [
+            "Claim your complementary Big Gemstone on your way out!",
+            "3000 years dungeon for anybody snooping in the page source",
+            "Send your dwellersonas via carrier pigeon for a cameo!",
+            "Press F5 for instant download link!"
+        ]
+        
+        var date = new Date()
+        var motd = motd_list[date.getDay() % 4]
+        
         this.innerHTML = `
         <audio id="blip" preload="auto"><source src="audio/getfruit.wav" type="audio/wav"></audio> 
         <style>
@@ -186,7 +196,7 @@ class Header extends HTMLElement {
         </div>
         <div class="marquee-container">
             <div class="marquee-border">
-                <div class="marquee">Claim your complementary Big Gemstone on your way out!</div>
+                <div class="marquee">` + motd + `</div>
             </div>
         </div>
     `;
