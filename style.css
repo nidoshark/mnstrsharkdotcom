@@ -184,3 +184,18 @@ a:active {
         bottom: -10px;
     }
 }
+
+audio {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.description {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    margin: 0;
+    top: -6px;
+    position: relative;
+}

@@ -35,8 +35,8 @@ function playFoyer(ele) {
     window.setTimeout(foyerEnd, 600, ele);
 }
 
-function rollRogbat() {    
-    var val = Math.floor(Math.random() * 4);
+function rollRogbat() {
+    var val = Math.floor(Math.random() * 9);
     
     if (val == 0) {
         var ele = document.getElementById('rogbat')
