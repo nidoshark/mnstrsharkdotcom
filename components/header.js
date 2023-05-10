@@ -7,12 +7,13 @@ class Header extends HTMLElement {
         var motd_list = [
             "Claim your complementary Big Gemstone on your way out!",
             "3000 years dungeon for anybody snooping in the page source",
-            "Send your dwellersonas via carrier pigeon for a cameo!",
+            "Please only submit your dwellersonas via carrier pigeon",
+            "A little Skelly told me the 404 page changes sometimes...",
             "Press F5 for instant download link!"
         ]
         
         var date = new Date()
-        var motd = motd_list[date.getDay() % 4]
+        var motd = motd_list[date.getDate() % (motd_list.length - 1)]
         
         this.innerHTML = `
         <audio id="blip" preload="auto"><source src="audio/getfruit.wav" type="audio/wav"></audio> 
@@ -186,6 +187,7 @@ class Header extends HTMLElement {
                 </a><a href="404" onclick="playNav()">???</a>
             </div>
         </header>
+        <!-- CONGRATULATIONS LUCKY WINNER! YOU HAVE EARNED AN INDEFINITE VACATION TO THE DEPTHS OF THE DUNGEON! -->
         <img class="gear gear_left">
         <img class="gear gear_right">
         <div class="logo-name">
