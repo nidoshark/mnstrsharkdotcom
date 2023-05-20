@@ -40,7 +40,7 @@ class Footer extends HTMLElement {
             <div class="footer">
                 © 2022-2023 MNSTR Shark<br>
                 Last updated May 20th 2023<br><br>
-                <p>This website was built by <a href="https://twitter.com/nidoshark">NIDO</a>. If something is broken, please contact me :]</p>
+                <p>This website was built by <a href="https://twitter.com/wyanido">NIDO</a>. If something is broken, please contact me :]</p>
             </div>
         </div>
       </footer>
