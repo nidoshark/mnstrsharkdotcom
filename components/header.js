@@ -9,7 +9,9 @@ class Header extends HTMLElement {
             "3000 years dungeon for anybody snooping in the page source",
             "Please only submit your dwellersonas via carrier pigeon",
             "A little Skelly told me the 404 page changes sometimes...",
-            "Press F5 for instant download link!"
+            "Press F5 for instant download link!",
+            "Hey keeper my guildmates and I really enjoy your campaigns",
+            "Proudly the world's first game (record pending)"
         ]
         
         var date = new Date()
