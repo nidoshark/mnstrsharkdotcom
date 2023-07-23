@@ -34,24 +34,24 @@ class Header extends HTMLElement {
             .gear_left {
                 left: calc(calc(50% - var(--panel-width) * 0.5) - 200px);
                 animation: gear_left 50s linear infinite;
-                animation-delay: calc(-50s + var(--scroll) * 0.03s);
+                animation-delay: calc(-0s - var(--scroll) * 0.03s);
             }
             
             .gear_right {
                 right: calc(calc(50% - var(--panel-width) * 0.5) - 200px);
                 animation: gear_right 50s linear infinite;
-                animation-delay: calc(-50s + var(--scroll) * 0.03s);
+                animation-delay: calc(-0s - var(--scroll) * 0.03s);
             }
 
             @keyframes gear_left {
                 to {
-                    transform: rotateZ(360deg);
+                    transform: rotateZ(-360deg);
                 }
             }
 
             @keyframes gear_right {
                 to {
-                    transform: rotateZ(-360deg);
+                    transform: rotateZ(360deg);
                 }
             }
 
@@ -95,13 +95,8 @@ class Header extends HTMLElement {
             }
 
             .logo-name img {
-                width: 45%;
-                display: flex;
-                box-sizing: border-box;
-                margin: auto;
-                margin-right: 64px;
-                margin-top: 35px;
-                display: block;
+                width: 100px;
+                padding: 38px;
             }
 
             .name {

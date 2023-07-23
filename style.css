@@ -47,6 +47,13 @@ body {
     border-color: #666666;
 }
 
+.blog-image-secondary {
+    height: auto;
+    width: 75%;
+    display: block;
+    margin: 20px auto;
+}
+
 .content {
     width: 100%;
     max-width: 600px;
@@ -182,6 +189,13 @@ a:active {
     
     .rogbat {
         bottom: -10px;
+    }
+
+    .blog-image-secondary {
+        height: auto;
+        width: 75%;
+        display: block;
+        margin: 20px auto !important;
     }
 }
 
