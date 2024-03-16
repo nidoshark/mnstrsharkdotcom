@@ -38,7 +38,7 @@ class Footer extends HTMLElement {
       <footer>
         <div class="footer_container">
             <div class="footer">
-                © 2022-2023 MNSTR Shark<br>
+                © 2022-2024 MNSTR Shark<br>
                 Last updated January 28th 2024<br><br>
                 <p>This website was built by <a href="https://twitter.com/wyanido">NIDO</a>. If something is broken, please contact me :]</p>
             </div>
